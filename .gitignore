@@ -1,85 +1,57 @@
-# === ENTORNOS VIRTUALES ===
-.env
-.venv/
-venv/
-ENV/
-env/
-*.egg-info/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
 
-# === PYTHON / CIENCIA DE DATOS ===
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
-*.ipynb
-*.pkl
-*.joblib
-*.npy
-*.npz
-*.h5
-*.hdf5
-*.csv
-*.tsv
-*.sqlite
-*.db
-*.log
-
-# === NODE / WEB ===
-node_modules/
-dist/
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.eggs/
 build/
-.cache/
-.next/
-out/
-*.log
-*.lock
-*.map
+dist/
+__pypackages__/
 
-# === COMPILADOS / BINARIOS ===
-*.class
-*.exe
-*.dll
-*.so
-*.o
-*.a
-*.out
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
 
-# === ASSETS PESADOS / TEMPORALES ===
-*.zip
-*.tar.gz
-*.rar
-*.7z
-*.bak
-*.tmp
+# Jupyter
+.ipynb_checkpoints/
 
-# === ARCHIVOS DE SISTEMA ===
-.DS_Store
-Thumbs.db
-desktop.ini
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
 
-# === EDITORES ===
+# Editores
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+*.swp
+*.swo
+*~
 
-# === GIT ===
+# Archivos temporales
+*.log
+*.tmp
+*.bak
 *.orig
-
-# === UNITY / UNREAL / GAME ENGINES ===
-[Ll]ibrary/
-[Tt]emp/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
-*.unitypackage
-*.psd
-*.blend1
-
-# === CONFIGURACIONES PERSONALES O CLAVES ===
-*.key
-*.pem
-*.crt
-*.env.local
-secret.*
-credentials.*
-config.local.*
